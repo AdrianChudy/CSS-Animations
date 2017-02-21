@@ -1,0 +1,88 @@
+html {
+    font-size: 15px;
+}
+body {
+    margin: 2em;
+}
+div {
+    width: 15em;
+    height: 15em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+#transition {
+    width: 17em;
+    height: 17em;
+    background: url('img/next.png');  
+    -webkit-transition: all 5s cubic-bezier(0.920, 0.060, 0.055, 0.980); 
+    -moz-transition: all 5s cubic-bezier(0.920, 0.060, 0.055, 0.980);
+    transition: all 5s cubic-bezier(0.920, 0.060, 0.055, 0.980);
+}
+#transition:hover {
+    width: 100%;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: solid 0.2em black;
+    border-radius: 0.5em;
+}
+#keyframes {
+    background: url('img/funny-lol.png') no-repeat;
+    background-size: 90%;
+    -moz-animation: rotating 1.5s linear infinite 1s,
+                    move-animation 15s ease infinite alternate 1s;
+    -webkit-animation: rotating 1.5s linear infinite 1s,
+                       move-animation 15s ease infinite alternate 1s;
+    animation: rotating 1.5s linear infinite 1s,
+               move-animation 15s ease infinite alternate 1s; 
+}
+@-webkit-keyframes move-animation {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 80%;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+@keyframes move-animation {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 78%;
+    }
+    100% {
+        margin-right: 0;
+    }
+}
+@-webkit-keyframes rotating {
+    from {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+@keyframes rotating {
+    from {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
